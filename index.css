@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    grid-column: 1;
+    width: 200px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2.5%;
+    background-color: aqua;
+}
+.hero{
+    padding: 30%;
+    background-color: red;
+}
+#lessons{
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+    background-color: blueviolet;
+
+}
+.lessons{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    padding: 2.5%;
+}
