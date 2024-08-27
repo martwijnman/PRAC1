@@ -1,26 +1,36 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 nav{
     display: flex;
     flex-direction: row;
     grid-column: 1;
     width: 200px;
+    color: white;
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-header{
+header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;  /* Two equal columns */
     padding: 2.5%;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+    position: sticky;               /* Makes the header sticky */
+    top: 0;                         /* Sticks to the top */
+    z-index: 1000;                  /* Ensures the header is above other content */
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);  /* Darker background on scroll */
+    /* Additional styles can go here */
 }
 .hero{
-    padding: 30%;
-    background-color: red;
+    padding: 15%;
 }
 #lessons{
     display: flex;
@@ -32,6 +42,60 @@ header{
 .lessons{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.teachers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 150px;
+}
+#teachers{
+    display: flex;
+    justify-content: center;
+    padding: 2.5%;
+    background-color: #edede9;
+}
+#planning{
+    padding: 5%;
+    background-color: #caf0f8;
+}
+.teacherpicture{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.teachertemplate{
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
+.lessoncontainer{
+    background-color: aliceblue;
+    padding: 2.5%;
+    border-radius: 10px;
+}
+.borderimage{
+    border-radius: 5px;
+}
+.planning{
+    display: flex;
+    justify-content: center;
+    border: 2px solid darkblue;
+}
+.planningpic{
+    display: flex;
+    justify-content: center;
+}
+.border{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.wrapper{
+    background-image: url("img/background.png");
 }
 footer{
     padding: 2.5%;
