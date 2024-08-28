@@ -11,6 +11,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
+
 // Select the element with the rainbow background
 const rainbowBg = document.getElementById('rainbowbg');
 
