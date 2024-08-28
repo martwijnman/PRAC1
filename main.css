@@ -66,15 +66,16 @@ header.scrolled {
 }
 .teacherpicture{
     width: 300px;
-    height: 200px;
+    height: auto;
     border-radius: 5px;
+    padding-bottom: 5px;
 }
 
 .teachertemplate{
     border-radius: 10px;
     background-color: white;
     width: 300px;
-    height: 300px;
+    padding: 10%;
 }
 .lessoncontainer{
     background-color: aliceblue;
@@ -98,9 +99,72 @@ header.scrolled {
     margin-left: 2px;
 }
 .wrapper{
-    background-image: url("img/background.png");
+    background-image: url("img/DALL·E\ 2024-08-28\ 09.33.13\ -\ A\ wide\ image\ suitable\ for\ a\ website\ header\,\ depicting\ a\ software\ developer\ coding\ in\ a\ modern\ office\ environment.\ The\ developer\ is\ a\ middle-aged\ South.webp");
 }
 footer{
     padding: 2.5%;
     color: #778da9;
 }
+@media only screen and (max-width: 600px) {
+    header a{
+        font-size: x-small;
+    }
+    header p{
+        font-size: x-small;
+    }
+    body {
+      background-color: lightblue;
+    }
+    .wrapper{
+        background-image: url("img/softwaredeveloper.png");
+    }
+    #teachers{
+        width: 375px;
+        padding: 0;
+    }
+    #planning{
+        width: 375px;
+        padding: 1%;
+    }
+
+    .teachers{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: dense;
+        gap: 5px;
+    }
+    .teachertemplate{
+        border-radius: 10px;
+        background-color: white;
+        width: 150px;
+        padding: 5%;
+        justify-self: start;
+    }
+    .teacherpicture{
+        width: 150px;
+        height: 147px;
+        border-radius: 5px;
+        padding-bottom: 5px;
+    }
+    footer p{
+        font-size: x-small;
+    }
+    #lessons{
+        width: 375px;
+        display: flex;
+        justify-content: start;
+    }
+    .lesson{
+        width: 150px;
+    }
+    .borderimage{
+        width: 186.16px;
+        height: 102.66;
+    }
+    #planning{
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        border-radius: 0;
+    }
+  }
