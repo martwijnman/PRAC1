@@ -10,5 +10,16 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scrolled');
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const navbarItems = document.querySelectorAll('mouseover');
 
+    navbarItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.classList.add('hover');
+        });
 
+        item.addEventListener('mouseout', () => {
+            item.classList.remove('hover');
+        });
+    });
+});

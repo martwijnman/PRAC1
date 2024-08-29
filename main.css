@@ -3,16 +3,46 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-nav{
+ul{
     display: flex;
     flex-direction: row;
     grid-column: 1;
     width: 200px;
     color: white;
 }
+
 nav a{
     text-decoration: none;
     color: white;
+}
+.mouseover{
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav li:hover::after {
+    width: 100%;
 }
 header {
     display: grid;
@@ -105,6 +135,7 @@ footer{
     padding: 2.5%;
     color: #778da9;
 }
+
 @media only screen and (max-width: 600px) {
     header a{
         font-size: x-small;
