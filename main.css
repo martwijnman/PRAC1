@@ -111,6 +111,14 @@ header.scrolled {
     background-color: aliceblue;
     padding: 2.5%;
     border-radius: 10px;
+    width: 898.15px;
+}
+.lessoninfo{
+    display: none;
+    
+}
+.lesson:hover .lessoninfo, .lesson .lessoninfo.hover{
+    display: block;
 }
 .borderimage{
     border-radius: 5px;
@@ -140,6 +148,7 @@ footer{
     header a{
         font-size: x-small;
     }
+
     header p{
         font-size: x-small;
     }
@@ -190,6 +199,9 @@ footer{
     }
     .lesson{
         width: 150px;
+    }
+    .lessoncontainer{
+        width: 200px;
     }
     .borderimage{
         width: 186.16px;
