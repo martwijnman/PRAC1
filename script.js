@@ -31,4 +31,19 @@ document.addEventListener('DOMContentLoaded', function(){
             item.classList.remove('hover');
         })
     })
+
+window.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('a[href^="#"').forEach(anchor => {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        }
+    })
+})
 })
