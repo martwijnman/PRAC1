@@ -136,7 +136,7 @@ header.scrolled {
     margin-right: 2px;
     margin-left: 2px;
 }
-.wrapper{
+#wrapper{
     background-image: url("img/DALL·E\ 2024-08-28\ 09.33.13\ -\ A\ wide\ image\ suitable\ for\ a\ website\ header\,\ depicting\ a\ software\ developer\ coding\ in\ a\ modern\ office\ environment.\ The\ developer\ is\ a\ middle-aged\ South.webp");
 }
 footer{
@@ -155,7 +155,7 @@ footer{
     body {
       background-color: lightblue;
     }
-    .wrapper{
+    #wrapper{
         background-image: url("img/softwaredeveloper.png");
     }
     #teachers{
@@ -213,4 +213,9 @@ footer{
         padding: 0;
         border-radius: 0;
     }
+  }
+  #wrapper, #lessons, #teachers{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }

@@ -9,6 +9,10 @@ window.addEventListener('scroll', function () {
     } else {
         header.classList.remove('scrolled');
     }
+    let scrolled = window.pageYOffset;
+    document.getElementById('wrapper').style.backgroundPositionY = -(scrolled * 0.5);
+    document.getElementById('lessons').style.backgroundPositionY = -(scrolled * 0.7);
+    document.getElementById('teachers').style.backgroundPositionY =  -(scrolled * 0.3);
 });
 document.addEventListener('DOMContentLoaded', () => {
     const navbarItems = document.querySelectorAll('mouseover');
