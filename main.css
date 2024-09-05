@@ -218,4 +218,97 @@ footer{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+  }@media only screen and (max-width: 1200px) {
+    .teachers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        gap: 20px;
+    }
+    .borderimage{
+        width: 372.32px;
+        height: 205.22px;
+    }
+    .lessoncontainer{
+        width: 500px;
+    }
+  }@media only screen and (max-width: 400px) {
+    header a{
+        font-size: x-small;
+    }
+
+    header p{
+        font-size: x-small;
+    }
+    body {
+      background-color: lightblue;
+    }
+    #wrapper{
+        background-image: url("img/softwaredeveloper.png");
+    }
+    #teachers{
+        width: 375px;
+        padding: 2%;
+        display: flex;
+        justify-content: start;
+
+    }
+    #planning{
+        width: 375px;
+        padding: 1%;
+    }
+
+    .teachers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        gap: 5px;
+    }
+    .teachertemplate{
+        border-radius: 10px;
+        background-color: white;
+        width: 150px;
+        padding: 5%;
+        justify-self: start;
+    }
+    .teacherpicture{
+        width: 150px;
+        height: 147px;
+        border-radius: 5px;
+        padding-bottom: 5px;
+    }
+    footer p{
+        font-size: x-small;
+    }
+    #lessons{
+        width: 500px;
+        display: flex;
+        justify-content: start;
+        
+    }
+    .lesson{
+        margin-left: 30px;
+        width: 150px;
+    }
+    .lessoncontainer{
+        width: 200px;
+    }
+    .borderimage{
+        width: 186.16px;
+        height: 102.66;
+        margin-left: 53px;
+    }
+    #planning{
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        border-radius: 0;
+        width: 844px;
+        
+    }
+  }
+  #wrapper, #lessons, #teachers{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
